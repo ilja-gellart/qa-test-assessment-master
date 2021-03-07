@@ -73,3 +73,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Backend service that is used
 The actual backend we're hitting is [SWAPI (Star Wars API)](https://swapi.dev/documentation)
+# qa-test-assessment-master
