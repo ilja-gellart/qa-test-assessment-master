@@ -54,7 +54,7 @@ Then('Verify every valid result for Person contains his / her “Gender”, “B
 });
 
 Then('Verify it’s a valid result for Planet contains {string}, {string} and {string}', { timeout: 25 * 1000 }, async (population, climate, gravity) => {
-  //Print All values for population, climate, gravity and assert that they not equal to null
+  // Get values for population, climate, gravity and assert that they are equal to the test data in feature file
   var textOut;
   await element.all(by.css('app-planet .card-body')).each(async function (parent, index) {
       await parent.getText().then(async function (text) {
