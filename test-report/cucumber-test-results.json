@@ -1,0 +1,748 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Additional flow checks",
+    "line": 1,
+    "id": "additional-flow-checks",
+    "tags": [],
+    "uri": "e2e/features/additional-flow-checks.feature",
+    "elements": [
+      {
+        "id": "additional-flow-checks;scenario-outline-name:-verify-switch-between-planets-and-people",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Scenario Outline name: Verify switch between Planets and People",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User select a tab \"Planets\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User search for \"Tatooine\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify it’s a valid result for Planet contains \"200000\", \"arid\" and \"1 standard\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 160000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User select a tab \"Person\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User click on search button",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify it’s a Not Found result",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional-flow-checks;verify-clear-and-search-enter-key",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify clear and search Enter key",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User select a tab \"People\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User search for \"a\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verify every valid result for Person contains his / her “Gender”, “Birth year”, “Eye color” and “Skin color",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User clear search box and hit Enter key",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify it’s a Not Found result",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 9000000,
+              "error_message": "NoSuchElementError: No element found using locator: by.cssContainingText(\"div\", \"Not found\")\n    at /Users/iljagellart/Downloads/qa-test-assessment-master/node_modules/protractor/built/element.js:814:27\n    at processTicksAndRejections (node:internal/process/task_queues:94:5)Error: \n    at ElementArrayFinder.applyAction_ (/Users/iljagellart/Downloads/qa-test-assessment-master/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as isDisplayed] (/Users/iljagellart/Downloads/qa-test-assessment-master/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as isDisplayed] (/Users/iljagellart/Downloads/qa-test-assessment-master/node_modules/protractor/built/element.js:831:22)\n    at Object.<anonymous> (/Users/iljagellart/Downloads/qa-test-assessment-master/e2e/steps/searchPage.steps.ts:39:33)\n    at step (/Users/iljagellart/Downloads/qa-test-assessment-master/e2e/steps/searchPage.steps.ts:31:23)\n    at Object.next (/Users/iljagellart/Downloads/qa-test-assessment-master/e2e/steps/searchPage.steps.ts:12:53)\n    at /Users/iljagellart/Downloads/qa-test-assessment-master/e2e/steps/searchPage.steps.ts:6:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/iljagellart/Downloads/qa-test-assessment-master/e2e/steps/searchPage.steps.ts:2:12)\n    at World.<anonymous> (/Users/iljagellart/Downloads/qa-test-assessment-master/e2e/steps/searchPage.steps.ts:38:44)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Check People",
+    "line": 1,
+    "id": "check-people",
+    "tags": [],
+    "uri": "e2e/features/person-ckeck.feature",
+    "elements": [
+      {
+        "id": "check-people;verify-not-found-message-for-people",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Verify Not Found message for People",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1087000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User select a tab \"Person\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User search for \"??\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify it’s a Not Found result",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-people;verify-each-found-person-contains-a-value-in-“gender”,-“birth-year”,-“eye-color”-and-“skin-color",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify each found Person contains a value in “Gender”, “Birth year”, “Eye color” and “Skin color",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User select a tab \"Person\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User search for \"Luke Skywalker\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify every valid result for Person contains his / her “Gender”, “Birth year”, “Eye color” and “Skin color",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-people;verify-each-found-person-contains-a-value-in-“gender”,-“birth-year”,-“eye-color”-and-“skin-color",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify each found Person contains a value in “Gender”, “Birth year”, “Eye color” and “Skin color",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1068000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User select a tab \"Person\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User search for \"a\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify every valid result for Person contains his / her “Gender”, “Birth year”, “Eye color” and “Skin color",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Check Planets",
+    "line": 1,
+    "id": "check-planets",
+    "tags": [],
+    "uri": "e2e/features/planets-check.feature",
+    "elements": [
+      {
+        "id": "check-planets;verify-not-found-message-for-planets",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Verify Not Found message for Planets",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User select a tab \"Planets\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User search for \"??\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify it’s a Not Found result",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-planets;verify-each-found-planet-contains-population,-climate-and-gravity",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify each found Planet contains Population, Climate and Gravity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User select a tab \"Planets\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User search for \"Tatooine\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify it’s a valid result for Planet contains \"200000\", \"arid\" and \"1 standard\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-planets;verify-each-found-planet-contains-population,-climate-and-gravity",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify each found Planet contains Population, Climate and Gravity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User select a tab \"Planets\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User search for \"Alderaan\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify it’s a valid result for Planet contains \"2000000000\", \"temperate\" and \"1 standard\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-planets;verify-each-found-planet-contains-population,-climate-and-gravity",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify each found Planet contains Population, Climate and Gravity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1079000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User select a tab \"Planets\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User search for \"Dagobah\" character",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify it’s a valid result for Planet contains \"unknown\", \"murky\" and \"N/A\"",
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/stacktrace-js/stacktrace.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

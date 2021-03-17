@@ -2,6 +2,17 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 exports.config = {
+  reporters: [
+    // Like this with the default options, see the options below
+    'cucumberjs-json',
+
+    // OR like this if you want to set the folder and the language
+    [ 'cucumberjs-json', {
+            jsonFolder: 'tmp/new/',
+            language: 'en',
+        },
+    ],
+],
   debug: false,
   allScriptsTimeout: 11000,
   //seleniumAddress: 'http://localhost:4444/wd/hub',  
@@ -23,10 +34,17 @@ exports.config = {
       './e2e/**/*.steps.ts'
     ],
     format: [
-      'json:test-reports/cucumber-test-results.json'
+      'json:test-report/cucumber-test-results.json'
     ]
   },
   onPrepare() {
+    var fs = require('fs');
+    var dir = './test-report/';
+    
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir);
+    }
+    
     require('ts-node').register({
       project: require('path').join(__dirname, './e2e/tsconfig.e2e.json')
     });
